@@ -1778,7 +1778,7 @@ CREATE TABLE `computer` (
 
 LOCK TABLES `computer` WRITE;
 /*!40000 ALTER TABLE `computer` DISABLE KEYS */;
-INSERT INTO `computer` VALUES (1,'MYSERV','2017-08-02 22:39:27'),(2,'NEO-PC','2020-08-07 15:37:36');
+INSERT INTO `computer` VALUES (1,'MYSERV','2017-08-02 22:39:27'),(2,'NEO-PC','2020-08-07 15:58:12');
 /*!40000 ALTER TABLE `computer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2096,7 +2096,7 @@ CREATE TABLE `custreference` (
   `IsBadRef` tinyint(4) NOT NULL,
   PRIMARY KEY (`CustReferenceNum`),
   KEY `PatNum` (`PatNum`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2105,7 +2105,7 @@ CREATE TABLE `custreference` (
 
 LOCK TABLES `custreference` WRITE;
 /*!40000 ALTER TABLE `custreference` DISABLE KEYS */;
-INSERT INTO `custreference` VALUES (1,7,'0001-01-01','',0),(2,1,'0001-01-01','',0),(3,3,'0001-01-01','',0),(4,4,'0001-01-01','',0);
+INSERT INTO `custreference` VALUES (1,7,'0001-01-01','',0),(2,1,'0001-01-01','',0),(3,3,'0001-01-01','',0),(4,4,'0001-01-01','',0),(5,5,'0001-01-01','',0);
 /*!40000 ALTER TABLE `custreference` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3169,7 +3169,7 @@ CREATE TABLE `ehrpatient` (
 
 LOCK TABLES `ehrpatient` WRITE;
 /*!40000 ALTER TABLE `ehrpatient` DISABLE KEYS */;
-INSERT INTO `ehrpatient` VALUES (1,'','',0,''),(2,'','',0,''),(3,'','',0,''),(4,'','',0,'');
+INSERT INTO `ehrpatient` VALUES (1,'','',0,''),(2,'','',0,''),(3,'','',0,''),(4,'','',0,''),(5,'','',0,'');
 /*!40000 ALTER TABLE `ehrpatient` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3540,7 +3540,7 @@ CREATE TABLE `employer` (
   `Zip` varchar(255) DEFAULT '',
   `Phone` varchar(255) DEFAULT '',
   PRIMARY KEY (`EmployerNum`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3549,7 +3549,7 @@ CREATE TABLE `employer` (
 
 LOCK TABLES `employer` WRITE;
 /*!40000 ALTER TABLE `employer` DISABLE KEYS */;
-INSERT INTO `employer` VALUES (3,'Employer 1','','','','','',''),(4,'Employer 2','','','','','',''),(5,'kiki','','','','','',''),(6,'Ins','','','','','','');
+INSERT INTO `employer` VALUES (3,'Employer 1','','','','','',''),(4,'Employer 2','','','','','',''),(5,'kiki','','','','','',''),(6,'Ins','','','','','',''),(7,'Jarvis','','','','','','');
 /*!40000 ALTER TABLE `employer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -5723,7 +5723,7 @@ CREATE TABLE `patient` (
   KEY `ClinicNum` (`ClinicNum`),
   KEY `Email` (`Email`),
   KEY `ChartNumber` (`ChartNumber`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -5732,7 +5732,7 @@ CREATE TABLE `patient` (
 
 LOCK TABLES `patient` WRITE;
 /*!40000 ALTER TABLE `patient` DISABLE KEYS */;
-INSERT INTO `patient` VALUES (1,'Patient 1','MiddleP1','','',0,0,0,'1984-12-12','','','','','','','','','',1,'','','',0,1,0,0,40,'PatientMiddleP1','','','','','','','','',0,0,0,0,0,0,0,'','',0,0,'0001-01-01',0,'','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2017-07-11 23:01:01',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(2,'Patient 2','PM2','','',0,0,0,'0001-01-01','','','','','','','','','',1,'','','',0,1,0,0,40,'PatientPM2','','','','','','','','',0,0,0,0,0,0,0,'','',0,0,'0001-01-01',0,'','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2017-07-11 23:01:14',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(3,'Abella','Demby','','',0,0,0,'0001-01-01','','','','','','','','','',3,'','','',0,1,0,0,40,'AbellaDemby3','','','','','','','','',0,0,0,0,0,0,0,'','',0,0,'2017-10-10',0,'I','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2018-04-18 15:38:17',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(4,'Reyes','Ella','C','',0,1,0,'0001-01-01','','','','','','','','','',4,'','','',-10,1,0,0,40,'ReyesElla4','','','','','','','','',0,0,0,0,0,-10,0,'','',0,0,'2019-03-29',0,'I','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2019-03-29 16:53:35',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1);
+INSERT INTO `patient` VALUES (1,'Patient 1','MiddleP1','','',0,0,0,'1984-12-12','','','','','','','','','',1,'','','',0,1,0,0,40,'PatientMiddleP1','','','','','','','','',0,0,0,0,0,0,0,'','',0,0,'0001-01-01',0,'','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2017-07-11 23:01:01',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(2,'Patient 2','PM2','','',0,0,0,'0001-01-01','','','','','','','','','',1,'','','',0,1,0,0,40,'PatientPM2','','','','','','','','',0,0,0,0,0,0,0,'','',0,0,'0001-01-01',0,'','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2017-07-11 23:01:14',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(3,'Abella','Demby','','',0,0,0,'0001-01-01','','','','','','','','','',3,'','','',0,1,0,0,40,'AbellaDemby3','','','','','','','','',0,0,0,0,0,0,0,'','',0,0,'2017-10-10',0,'I','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2018-04-18 15:38:17',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(4,'Reyes','Ella','C','',0,1,0,'0001-01-01','','','','','','','','','',4,'','','',-10,1,0,0,40,'ReyesElla4','','','','','','','','',0,0,0,0,0,-10,0,'','',0,0,'2019-03-29',0,'I','',0,0,'',0,0,0,'00:00:00','00:00:00',0,'','0001-01-01','',0,0,'2019-03-29 16:53:35',0,0,0,'',0,0,0,'','','0001-01-01 00:00:00',1),(5,'Sanchez','Lance','S','Lantoy',0,0,0,'2020-09-15','','Purok 7','Brgy. Tolosa ','Cabadbaran','MA','8924','1(234)567-7890','1(235)677-8990','1(096)673-2250',5,'','lancesanchez16@gmail.com','Hello Dear',0,1,2,0,40,'','','','','','N','','1','',0,0,0,0,0,0,7,'','',0,0,'2020-05-16',0,'','',0,0,'',5,2,2,'00:00:00','00:00:00',0,'','0001-01-01','Mr.',0,0,'2020-08-07 07:58:33',0,0,30,'',0,0,0,'','','0001-01-01 00:00:00',1);
 /*!40000 ALTER TABLE `patient` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -9525,4 +9525,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-07 15:45:07
+-- Dump completed on 2020-08-07 16:03:39
