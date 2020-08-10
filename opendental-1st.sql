@@ -1020,7 +1020,7 @@ CREATE TABLE `carrier` (
   `CanadianEncryptionMethod` tinyint(4) NOT NULL,
   `CanadianSupportedTypes` int(11) NOT NULL,
   PRIMARY KEY (`CarrierNum`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1029,7 +1029,7 @@ CREATE TABLE `carrier` (
 
 LOCK TABLES `carrier` WRITE;
 /*!40000 ALTER TABLE `carrier` DISABLE KEYS */;
-INSERT INTO `carrier` VALUES (6,'Asdasd','','','','','','','',0,0,'',0,0,0,0),(7,'Ins','','','','','','','',0,0,'',0,0,0,0);
+INSERT INTO `carrier` VALUES (6,'Asdasd','','','','','','','',0,0,'',0,0,0,0),(7,'Ins','','','','','','','',0,0,'',0,0,0,0),(8,'Phil','Brgy. San Miguel','','Iligan','CA','7686','(343)345-2235','',0,0,'',0,0,0,0);
 /*!40000 ALTER TABLE `carrier` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1778,7 +1778,7 @@ CREATE TABLE `computer` (
 
 LOCK TABLES `computer` WRITE;
 /*!40000 ALTER TABLE `computer` DISABLE KEYS */;
-INSERT INTO `computer` VALUES (1,'MYSERV','2017-08-02 22:39:27'),(2,'NEO-PC','2020-08-10 18:35:16');
+INSERT INTO `computer` VALUES (1,'MYSERV','2017-08-02 22:39:27'),(2,'NEO-PC','2020-08-10 18:44:16');
 /*!40000 ALTER TABLE `computer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8111,7 +8111,7 @@ CREATE TABLE `signalod` (
   PRIMARY KEY (`SignalNum`),
   KEY `indexSigDateTime` (`SigDateTime`),
   KEY `indexAckTime` (`AckTime`)
-) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -8120,7 +8120,7 @@ CREATE TABLE `signalod` (
 
 LOCK TABLES `signalod` WRITE;
 /*!40000 ALTER TABLE `signalod` DISABLE KEYS */;
-INSERT INTO `signalod` VALUES (36,'','22,19','0001-01-01',1,'','2020-08-10 18:27:19','','0001-01-01 00:00:00',0),(35,'','60','0001-01-01',1,'','2020-08-10 18:02:45','','0001-01-01 00:00:00',0);
+INSERT INTO `signalod` VALUES (37,'','8','0001-01-01',1,'','2020-08-10 18:45:45','','0001-01-01 00:00:00',0),(36,'','22,19','0001-01-01',1,'','2020-08-10 18:27:19','','0001-01-01 00:00:00',0),(35,'','60','0001-01-01',1,'','2020-08-10 18:02:45','','0001-01-01 00:00:00',0);
 /*!40000 ALTER TABLE `signalod` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -9526,4 +9526,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-08-10 18:41:11
+-- Dump completed on 2020-08-10 18:50:35
