@@ -8406,6 +8406,7 @@ PRIMARY KEY (`insid`,`empid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO inscarrier (`automodifiedtimestamp`,`insid`,`empid`,`insconame`,`groupname`,`street1`,`city`,`country`,`phoneext`,`contact`,`initadacodechar`,`groupnum`,`unionnum`,`renewmon`,`claimfmt`,`elecfmt`,`altproccodeid`,`feeschtype`,`lastupdate`,`maxcovperson`,`maxcovfam`,`instableid`,`timelimit`,`_unused1`,`xray`,`inscov`,`secinscov`,`_unused2`,`state`,`zipcode`,`phone`,`street2`,`feesched`,`instype`,`carrieridnum`,`secnum`,`ucr`,`trojannum`,`dentwellnessindex`,`payerid`,`insflag`,`stddedperperson`,`prvdedperperson`,`otherdedperperson`,`stddedperpersonlt`,`prvdedperpersonlt`,`otherdedperpersonlt`,`stddedperfam`,`prvdedperfam`,`otherdedperfam`,`claimtype`,`hmocode`,`donotbillinsflag`,`diagprint`,`nationalplanid`,`donotincludegroupplannameflag`,`isrealtimeprovider`,`claimoptions`,`sourceofpayment`,`_unused3`) VALUES
+('2020-09-02 22:45:40', 2, 0, 'Jarvis Insurance                ', '                                ', 'Brgy. Tibanga                  ', 'Iligan                    ', '                        ', '     ', '                               ', ' ', '                         ', '       ', 1, 1, 0, 0, 0, '2020-09-02', 0, 0, 2, 0, 0, 0, 0, 0, 0, 'MA                   ', '7956           ', '7659875796       ', '                               ', 0, 0, '          ', '           ', 0, '        ', 0, '      ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '              ', 0, 0, '                     ', 0, 0, 0, 'CI ', '      '),
 ('2018-04-24 00:58:25', 1, 0, 'Mesasix Insurance Plan          ', '                                ', 'None                           ', '                          ', '                        ', '     ', '                               ', ' ', '                         ', '       ', 1, 1, 0, 0, 0, '2018-04-24', 0, 0, 1, 0, 0, 0, 0, 0, 0, '                     ', '               ', '                 ', '                               ', 0, 0, '          ', '           ', 0, '        ', 0, '      ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '              ', 0, 0, '                     ', 0, 0, 0, '   ', '      ');
 
 DROP TABLE IF EXISTS `instab2`;
@@ -9047,6 +9048,19 @@ INSERT INTO instab2 (`automodifiedtimestamp`,`instabid`,`begproc`,`endproc`,`cop
 ('2015-07-30 15:33:41', 20000000, 'D9973     ', 'D9973     ', 0, 100, 0, 'Ext bleaching   ', 0, 0),
 ('2015-07-30 15:33:41', 20000000, 'D9974     ', 'D9974     ', 0, 100, 0, 'Int bleaching   ', 0, 0),
 ('2015-07-30 15:33:41', 20000000, 'D9999     ', 'D9999     ', 0, 100, 0, 'Unspecified adj ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D9000     ', 'D9999     ', 0, 80, 0, 'Adj gen serv    ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D8000     ', 'D8999     ', 0, 50, 0, 'Orthodontics    ', 0, 2),
+('2020-09-02 22:45:40', 2, 'D7000     ', 'D7999     ', 0, 80, 0, 'Oral Surgery    ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D6200     ', 'D6999     ', 0, 50, 0, 'Prostho, fixed  ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D6000     ', 'D6199     ', 0, 50, 0, 'Implants        ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D5900     ', 'D5999     ', 0, 50, 0, 'Maxillo. Prosth ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D5000     ', 'D5899     ', 0, 50, 0, 'Prostho, remov  ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D4000     ', 'D4999     ', 0, 80, 0, 'Periodontics    ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D3000     ', 'D3999     ', 0, 80, 0, 'Endodontics     ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D2900     ', 'D2999     ', 0, 80, 0, 'Other Restor.   ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D2700     ', 'D2899     ', 0, 50, 0, 'Crowns          ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D2000     ', 'D2699     ', 0, 80, 0, 'Basic Restor    ', 0, 0),
+('2020-09-02 22:45:40', 2, 'D0100     ', 'D1999     ', 0, 100, 0, 'Diag/Preventive ', 0, 1),
 ('2018-04-24 00:58:25', 1, 'D9000     ', 'D9999     ', 0, 80, 0, 'Adj gen serv    ', 0, 0),
 ('2018-04-24 00:58:25', 1, 'D8000     ', 'D8999     ', 0, 50, 0, 'Orthodontics    ', 0, 2),
 ('2018-04-24 00:58:25', 1, 'D7000     ', 'D7999     ', 0, 80, 0, 'Oral Surgery    ', 0, 0),
@@ -18349,6 +18363,19 @@ INSERT INTO v_coverage_table (`table_id`,`begining_proc`,`ending_proc`,`copaymen
 (20000000, 'D9973     ', 'D9973     ', 0, 100, 0, 'Ext bleaching   ', 0, 0),
 (20000000, 'D9974     ', 'D9974     ', 0, 100, 0, 'Int bleaching   ', 0, 0),
 (20000000, 'D9999     ', 'D9999     ', 0, 100, 0, 'Unspecified adj ', 0, 0),
+(2, 'D9000     ', 'D9999     ', 0, 80, 0, 'Adj gen serv    ', 0, 0),
+(2, 'D8000     ', 'D8999     ', 0, 50, 0, 'Orthodontics    ', 0, 2),
+(2, 'D7000     ', 'D7999     ', 0, 80, 0, 'Oral Surgery    ', 0, 0),
+(2, 'D6200     ', 'D6999     ', 0, 50, 0, 'Prostho, fixed  ', 0, 0),
+(2, 'D6000     ', 'D6199     ', 0, 50, 0, 'Implants        ', 0, 0),
+(2, 'D5900     ', 'D5999     ', 0, 50, 0, 'Maxillo. Prosth ', 0, 0),
+(2, 'D5000     ', 'D5899     ', 0, 50, 0, 'Prostho, remov  ', 0, 0),
+(2, 'D4000     ', 'D4999     ', 0, 80, 0, 'Periodontics    ', 0, 0),
+(2, 'D3000     ', 'D3999     ', 0, 80, 0, 'Endodontics     ', 0, 0),
+(2, 'D2900     ', 'D2999     ', 0, 80, 0, 'Other Restor.   ', 0, 0),
+(2, 'D2700     ', 'D2899     ', 0, 50, 0, 'Crowns          ', 0, 0),
+(2, 'D2000     ', 'D2699     ', 0, 80, 0, 'Basic Restor    ', 0, 0),
+(2, 'D0100     ', 'D1999     ', 0, 100, 0, 'Diag/Preventive ', 0, 1),
 (1, 'D9000     ', 'D9999     ', 0, 80, 0, 'Adj gen serv    ', 0, 0),
 (1, 'D8000     ', 'D8999     ', 0, 50, 0, 'Orthodontics    ', 0, 2),
 (1, 'D7000     ', 'D7999     ', 0, 80, 0, 'Oral Surgery    ', 0, 0),
@@ -18530,6 +18557,7 @@ PRIMARY KEY (`ins_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_insurance_plans (`ins_id`,`ins_co_name`,`group_name`,`group_number`,`union_number`,`address_line1`,`address_line2`,`city`,`state`,`zipcode`,`phone`,`phone_ext`,`contact`,`renew_month`,`last_update`,`max_cov_person`,`max_cov_fam`,`time_limit`,`source_of_payment`,`ins_flag`,`std_ded_perperson`,`prv_ded_perperson`,`other_ded_perperson`,`std_ded_perperson_lt`,`prv_ded_perperson_lt`,`other_ded_perperson_lt`,`std_ded_perfam`,`prv_ded_perfam`,`other_ded_perfam`,`do_not_bill_ins_flag`,`diag_print_flag`,`do_not_include_group`,`national_plan_id`,`insurance_table_id`,`employer_id`,`payor_id`) VALUES
+(2, 'Jarvis Insurance                ', '                                ', '                         ', '       ', 'Brgy. Tibanga                  ', '                               ', 'Iligan                    ', 'MA                   ', '7956           ', '7659875796       ', '     ', '                               ', 1, '2020-09-02', 0, 0, 0, 'CI ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '                     ', 2, 0, '      '),
 (1, 'Mesasix Insurance Plan          ', '                                ', '                         ', '       ', 'None                           ', '                               ', '                          ', '                     ', '               ', '                 ', '     ', '                               ', 1, '2018-04-24', 0, 0, 0, '   ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '                     ', 1, 0, '      ');
 
 DROP TABLE IF EXISTS `v_insured`;
