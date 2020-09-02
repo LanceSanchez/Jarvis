@@ -9100,6 +9100,7 @@ PRIMARY KEY (`insuredid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO insured (`automodifiedtimestamp`,`insuredid`,`insplanid`,`inspartyid`,`fambenefits`,`sigonfile`,`idnum`,`ptrcount`,`idnum2`,`ins`,`_unused1`,`famstddedmet`,`famprvdedmet`,`famotherdedmet`,`fambenefitslastyr`,`famstddedlastyr`,`famprvdedlastyr`,`famotherdedlastyr`) VALUES
+('2020-09-02 23:37:38', 2, 2, 2, 0, 0, '                         ', 1, '  ', 0, '             ', 0, 0, 0, 0, 0, 0, 0),
 ('2018-04-24 00:58:27', 1, 1, 1, 0, 0, '                         ', 1, '  ', 0, '             ', 0, 0, 0, 0, 0, 0, 0);
 
 DROP TABLE IF EXISTS `lcmcase`;
@@ -13959,7 +13960,7 @@ PRIMARY KEY (`patid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO patient (`automodifiedtimestamp`,`patid`,`famid`,`lastname`,`firstname`,`mi`,`prefname`,`salutation`,`workext`,`besttime`,`chartnum`,`ssn`,`provid1`,`provid2`,`isguar`,`isinssubcriber`,`isheadofhouse`,`gender`,`status`,`fampos`,`priminscdadepcode`,`secinscdadepcode`,`premed`,`addrid`,`birthdate`,`empid`,`guarid`,`firstvisitdate`,`lastvisitdate`,`medalertmask1`,`medalertmask2`,`refid`,`refbyid`,`reftoid`,`reftodate`,`consentdate`,`priminsrel`,`secinsrel`,`priminsuredid`,`primbenefits`,`secinsuredid`,`secbenefits`,`claiminfid`,`workphone`,`feeschtype`,`feesched`,`missedappt`,`lastmissedappt`,`title`,`id2`,`titleflag`,`ezdwinpatid`,`primmedinsrel`,`secmedinsrel`,`primmedinsuredid`,`secmedinsuredid`,`language`,`emailaddr`,`driverslicense`,`fax`,`pager`,`otherphone`,`primstdded`,`primprvded`,`primotherded`,`secstdded`,`secprvded`,`secotherded`,`primstddedlt`,`primprvdedlt`,`primotherdedlt`,`secstddedlt`,`secprvdedlt`,`secotherdedlt`,`primstddedlastyr`,`primprvdedlastyr`,`primotherdedlastyr`,`secstddedlastyr`,`secprvdedlastyr`,`secotherdedlastyr`,`primbenefitslastyr`,`secbenefitslastyr`,`patalert`,`privacyflags`,`_unused1`,`patguid`) VALUES
-('2020-09-02 18:33:49', 2, 2, 'Sanchez              ', 'Lance           ', 'S ', 'Lantoy          ', 'Laban lng jud                   ', '     ', '           ', 'SA0001              ', '123456789 ', 'DMA1', '    ', 1, 0, 1, 1, 1, 1, 0, 0, 0, 55, '1997-08-15', 0, 2, '2020-09-02', null, 0, 0, 0, 0, 0, null, '2020-09-02', 0, 0, 0, 0, 0, 0, 0, '                 ', 0, 0, 0, null, 'Title ni  ', '987-654-321     ', 0, 0, 0, 0, 0, 0, 0, 'email@gmail.com                                             ', '                         ', '                 ', '5622378493       ', '                 ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '  ', '6617f132-6bba-47d8-9d36-33a7f6162ce6'),
+('2020-09-02 23:37:38', 2, 2, 'Sanchez              ', 'Lance           ', 'S ', 'Lantoy          ', 'Laban lng jud                   ', '     ', '           ', 'SA0001              ', '123456789 ', 'DMA1', '    ', 1, 1, 1, 1, 1, 1, 0, 0, 0, 55, '1997-08-15', 0, 2, '2020-09-02', null, 0, 0, 0, 0, 0, null, '2020-09-02', 1, 0, 2, 0, 0, 0, 0, '                 ', 0, 0, 0, null, 'Title ni  ', '987-654-321     ', 0, 0, 0, 0, 0, 0, 0, 'email@gmail.com                                             ', '                         ', '                 ', '5622378493       ', '                 ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '  ', '6617f132-6bba-47d8-9d36-33a7f6162ce6'),
 ('2018-04-24 00:58:27', 1, 1, 'Rusanov              ', 'Andrey          ', 'R ', '                ', 'Mr                              ', '     ', '           ', 'RU0002              ', '          ', 'DMA1', '    ', 1, 1, 1, 1, 1, 1, 0, 0, 0, 54, '1992-10-11', 0, 1, '2018-01-16', '2018-04-24', 0, 0, 0, 0, 0, null, '2018-01-16', 1, 0, 1, 0, 0, 0, 0, '                 ', 0, 0, 0, null, 'C# Dev    ', '                ', 0, 0, 0, 0, 0, 0, 0, '                                                            ', '                         ', '                 ', '                 ', '                 ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '  ', '1191871d-d511-4901-b9e6-f9727f58597a');
 
 DROP TABLE IF EXISTS `payplan`;
@@ -17326,7 +17327,7 @@ PRIMARY KEY (`provid`,`totalstype`,`yr`,`mon`)
 INSERT INTO totals (`automodifiedtimestamp`,`totalstype`,`mon`,`yr`,`provid`,`begmon`,`begyr`,`totalcharges`,`chargesins`,`chargesadj`,`financecharges`,`payments`,`paymentsins`,`paymentsadj`,`chargesspecialadjmtd`,`paymentsspecialadjmtd`,`latechargesmtd`,`latechargesytd`,`currentpaymentagreementbalance`,`_unused1`,`rec0`,`rec30`,`rec60`,`rec90`,`_rec120`,`payplan`,`currentcreditbalance`,`begbalance`,`_treatplan`,`_schedtreatplan`,`newpatcount`,`deletedpatcount`,`referredpatcount`,`activepatcount`,`totalpatcount`,`insuredpatcount`,`malepatcount`,`femalepatcount`,`under12patcount`,`over65patcount`,`familycount`,`missedpaymentcount`,`_recalls`,`_recallscomp`,`_recallspastcomp`,`_unused2`,`_unused3`,`_unused4`,`latecharges`,`_unused5`,`yrbegbalance`,`chargesytd`,`chargesinsytd`,`chargesadjytd`,`financechargeytd`,`paymentsytd`,`paymentsinsytd`,`paymentsadjytd`,`newpatcountytd`,`deletedpatcountytd`,`referredpatcountytd`,`missedpaymentcountytd`,`_yrrecallcount`,`_yrrecallcountcomp`,`_yrrecallcountpastcomp`,`chargesspecialadjytd`,`paymentsspecialadjytd`,`_unused6`,`_unused7`,`_unused8`,`_unused9`) VALUES
 ('2020-09-02 22:15:17', 0, 0, 0, '7384', 12, 2017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 ('2020-09-02 22:15:17', 1, 12, 2017, '7384', 1, 2017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('2020-09-02 18:33:48', 0, 0, 0, 'DMA1', 1, 2018, 100, 0, 0, 0, -10, 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 1, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, -10, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('2020-09-02 23:37:38', 0, 0, 0, 'DMA1', 1, 2018, 100, 0, 0, 0, -10, 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, -10, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 ('2018-01-16 02:23:14', 1, 12, 2017, 'DMA1', 1, 2017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 DROP TABLE IF EXISTS `txcase`;
@@ -18576,6 +18577,7 @@ PRIMARY KEY (`insured_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_insured (`insured_id`,`ins_plan_id`,`ins_party_id`,`family_benifits`,`id_num`,`ins_type`,`family_std_ded_met`,`family_prv_ded_met`,`family_oth_ded_met`) VALUES
+(2, 2, 2, 0, '                         ', 0, 0, 0, 0),
 (1, 1, 1, 0, '                         ', 0, 0, 0, 0);
 
 DROP TABLE IF EXISTS `v_lab`;
@@ -18710,7 +18712,7 @@ PRIMARY KEY (`patient_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_patient (`patient_id`,`patient_guid`,`last_name`,`first_name`,`mi`,`preferred_name`,`salutation`,`title`,`guar_id`,`guar_guid`,`address_line1`,`address_line2`,`city`,`state`,`zipcode`,`home_phone`,`work_phone`,`work_ext`,`other_phone`,`mobile_phone`,`chart_num`,`social_sec_num`,`pri_provider_id`,`pri_provider_last_name`,`pri_provider_first_name`,`sec_provider_id`,`sec_provider_last_name`,`sec_provider_first_name`,`gender`,`status`,`birth_date`,`first_visit_date`,`last_visit_date`,`last_missed_appointment`,`num_of_missed_appointments`,`email`,`fax`,`note`,`privacy_flags`,`employer_id`,`primdentalinsuredid`,`primmedicalinsuredid`,`secdentalinsuredid`,`secmedicalinsuredid`,`driverslicense`) VALUES
-(2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', 'S ', 'Lantoy          ', 'Laban lng jud                   ', 'Title ni  ', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Brgy. Tibanga                  ', '                               ', 'Los Angeles               ', 'CA                   ', '9202           ', '2341232134       ', '                 ', '     ', '                 ', '5622378493       ', 'SA0001              ', '123456789 ', 'DMA1', 'Abella               ', 'Demby           ', '    ', '', '', 1, 1, '1997-08-15', '2020-09-02', null, null, 0, 'email@gmail.com                                             ', '                 ', '', 0, 0, 0, 0, 0, 0, '                         '),
+(2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', 'S ', 'Lantoy          ', 'Laban lng jud                   ', 'Title ni  ', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Brgy. Tibanga                  ', '                               ', 'Los Angeles               ', 'CA                   ', '9202           ', '2341232134       ', '                 ', '     ', '                 ', '5622378493       ', 'SA0001              ', '123456789 ', 'DMA1', 'Abella               ', 'Demby           ', '    ', '', '', 1, 1, '1997-08-15', '2020-09-02', null, null, 0, 'email@gmail.com                                             ', '                 ', '', 0, 0, 2, 0, 0, 0, '                         '),
 (1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Rusanov              ', 'Andrey          ', 'R ', '                ', 'Mr                              ', 'C# Dev    ', 1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Russia                         ', 'Russia                         ', '                          ', '                     ', '               ', '                 ', '                 ', '     ', '                 ', '                 ', 'RU0002              ', '          ', 'DMA1', 'Abella               ', 'Demby           ', '    ', '', '', 1, 1, '1992-10-11', '2018-01-16', '2018-04-24', null, 0, '                                                            ', '                 ', '', 0, 0, 1, 0, 0, 0, '                         ');
 
 DROP TABLE IF EXISTS `v_patient_appointment`;
@@ -18729,7 +18731,7 @@ PRIMARY KEY (`modified_time_stamp`,`patient_id`,`patient_guid`,`last_name`,`firs
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_patient_appointment (`modified_time_stamp`,`patient_id`,`patient_guid`,`last_name`,`first_name`,`next_appointment_date`,`previous_appointment_date`,`number_of_missed_appointments`,`last_missed_appointment_date`) VALUES
-('2020-09-02 18:33:49', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', null, null, 0, null),
+('2020-09-02 23:37:38', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', null, null, 0, null),
 ('2018-04-24 00:58:27', 1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Rusanov              ', 'Andrey          ', null, '2018-04-24', 0, null);
 
 DROP TABLE IF EXISTS `v_patient_insurance`;
@@ -18754,7 +18756,7 @@ PRIMARY KEY (`patient_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_patient_insurance (`modified_time_stamp`,`patient_id`,`patient_guid`,`last_name`,`first_name`,`primary_insured_id`,`primary_insured_last_name`,`primary_insured_first_name`,`secondary_insured_id`,`secondary_insured_last_name`,`secondary_insured_first_name`,`primary_insurance_carrier_id`,`primary_insurance_carrier_name`,`secondary_insurance_carrier_id`,`secondary_insurance_carrier_name`) VALUES
-('0000-00-00 00:00:00', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', 0, '', '', 0, '', '', null, '', null, ''),
+('2020-09-02 23:37:38', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', 2, 'Sanchez              ', 'Lance           ', 0, '', '', 2, 'Jarvis Insurance                ', null, ''),
 ('2018-04-24 00:58:27', 1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Rusanov              ', 'Andrey          ', 1, 'Rusanov              ', 'Andrey          ', 0, '', '', 1, 'Mesasix Insurance Plan          ', null, '');
 
 DROP TABLE IF EXISTS `v_patient_prescription`;
