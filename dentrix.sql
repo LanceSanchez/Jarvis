@@ -539,6 +539,9 @@ CREATE TABLE `comm` (
 PRIMARY KEY (`stationid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO comm (`automodifiedtimestamp`,`stationid`,`_unused1`,`changedate`,`displaymode`,`displayop`,`displayprov`,`commcount`,`commtype`,`apptid1`,`apptid2`,`apptid3`,`apptid4`,`apptid5`,`apptid6`,`apptid7`,`apptid8`,`apptid9`,`apptid10`,`apptid11`,`apptid12`,`apptid13`,`apptid14`,`apptid15`,`status1`,`status2`,`status3`,`status4`,`status5`,`status6`,`status7`,`status8`,`status9`,`status10`,`status11`,`status12`,`status13`,`status14`,`status15`) VALUES
+('2020-09-03 14:37:55', -128, 0, '2020-08-30', 0, '    ', '    ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
 DROP TABLE IF EXISTS `consent`;
 -- Create syntax for TABLE 'consent'
 CREATE TABLE `consent` ( 
