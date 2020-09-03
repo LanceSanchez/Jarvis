@@ -165,6 +165,9 @@ CREATE TABLE `appt` (
 PRIMARY KEY (`apptid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO appt (`automodifiedtimestamp`,`apptid`,`apptdate`,`rsctype`,`opid`,`rsctype2`,`provid`,`otherid`,`apptbrokenclass`,`patname`,`patid`,`apptlen`,`amt`,`brokendate`,`apptflag`,`reserved2`,`phone`,`apptreason`,`timehr`,`timemin`,`status`,`appttype`,`timeblock`,`newpataddrid`,`autoupdatecc`,`setamt`,`refbytype`,`labcaseappt`,`addlprov`,`refid`,`followup`,`codeid1`,`codeid2`,`codeid3`,`codeid4`,`codeid5`,`codeid6`,`codeid7`,`codeid8`,`codeid9`,`codeid10`,`codeid11`,`codeid12`,`codeid13`,`codeid14`,`codeid15`,`codeid16`,`codeid17`,`codeid18`,`codeid19`,`codeid20`,`apptclass`,`rsctype3`,`staffid`,`modifieddate`,`codetype1`,`codetype2`,`codetype3`,`codetype4`,`codetype5`,`codetype6`,`codetype7`,`codetype8`,`codetype9`,`codetype10`,`codetype11`,`codetype12`,`codetype13`,`codetype14`,`codetype15`,`codetype16`,`codetype17`,`codetype18`,`codetype19`,`codetype20`,`createdate`,`createdbyuserid`,`pinboard`,`workstationid`,`orgdate`,`orgtimehr`,`orgtimemin`,`createtimehr`,`createtimemin`,`pattern`,`reserved`) VALUES
+('2020-09-03 15:14:31', 1, '2020-09-03', 3, '7654', 1, 'DMA1', 97, 0, 'Sanchez, Lance S                         ', 2, 10, 500, null, 0, '      ', '2341232134       ', 'Samp Add                                                     ', 16, 10, 0, 1, 2, 0, 1, 0, 0, 0, '    ', 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, '    ', '2020-09-03', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2020-09-03', '    ', 0, -128, null, 0, 0, 16, 10, 'qqqqqqqqqqqqqqqqqqqqqqqq', '          ');
+
 DROP TABLE IF EXISTS `apptevent`;
 -- Create syntax for TABLE 'apptevent'
 CREATE TABLE `apptevent` ( 
@@ -540,7 +543,7 @@ PRIMARY KEY (`stationid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO comm (`automodifiedtimestamp`,`stationid`,`_unused1`,`changedate`,`displaymode`,`displayop`,`displayprov`,`commcount`,`commtype`,`apptid1`,`apptid2`,`apptid3`,`apptid4`,`apptid5`,`apptid6`,`apptid7`,`apptid8`,`apptid9`,`apptid10`,`apptid11`,`apptid12`,`apptid13`,`apptid14`,`apptid15`,`status1`,`status2`,`status3`,`status4`,`status5`,`status6`,`status7`,`status8`,`status9`,`status10`,`status11`,`status12`,`status13`,`status14`,`status15`) VALUES
-('2020-09-03 14:37:55', -128, 0, '2020-08-30', 0, '    ', '    ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+('2020-09-03 15:14:36', -128, 0, '2020-08-30', 0, '    ', '    ', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 DROP TABLE IF EXISTS `consent`;
 -- Create syntax for TABLE 'consent'
@@ -8277,6 +8280,7 @@ PRIMARY KEY (`procid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO fullproclog (`automodifiedtimestamp`,`patid`,`procid`,`guarid`,`chartstatus`,`authstatus`,`procdate`,`proccodeid`,`preauthid`,`claimid`,`proclogclass`,`proclogorder`,`provid`,`history`,`authstatus2`,`amt`,`amtpriminspaid`,`amtsecinspaid`,`amtpreauth`,`createdate`,`amtsecpreauthdollar`,`paintflag`,`amtsecpreauthcents`,`materialcost`,`labexpense`,`cdareason`,`cdalabcode`,`toothrangestart`,`toothrangeend`,`surfacestring`,`surfm`,`surfo`,`surfd`,`surfl`,`surff`,`surf5`,`amtsecpreauth`,`invalidasofflagstpdate`,`medproctype`,`srflag`,`donotbillinsflag`,`diag`,`refid`,`reftype`,`labfee2`,`cdalabcode2`,`srflagex`,`txcaseid`,`txcaseindex`,`checknum`,`appliedtopa`,`startcompdatereq`,`completiondate`,`startdate`,`primestoverride4orphaned`,`secestoverride4orphaned`,`_unused`) VALUES
+('2020-09-03 15:13:42', 2, 3, 2, 105, 0, '2020-09-03', 747, 0, 0, 0, 0, 'DMA1', 0, 0, 500, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, ' ', 0, 2, 0, '                     ', 0, 0, null, null, 0, 0, '  '),
 ('2018-04-24 00:38:59', 1, 2, 1, 90, 0, '2018-04-24', 0, 0, 0, 1, 1, 'DMA1', 0, 0, -10, 0, 0, 0, '2018-04-24', 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, ' ', 0, 0, 0, '                     ', 0, 0, null, null, 0, 0, '  '),
 ('2018-04-24 00:32:06', 1, 1, 1, 102, 0, '2018-04-24', 62, 0, 0, 0, 0, 'DMA1', 0, 0, 100, 0, 0, 0, '2018-04-24', 0, 0, 0, 0, 0, 0, 0, 21, 21, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, ' ', 0, 0, 0, '                     ', 0, 0, null, null, 0, 0, '  ');
 
@@ -17124,6 +17128,10 @@ CREATE TABLE `rscuse` (
 PRIMARY KEY (`rsctype`,`rscid`,`rscdate`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO rscuse (`automodifiedtimestamp`,`rscdate`,`rsctype`,`rscid`,`rscdata`) VALUES
+('2020-09-03 15:14:31', '2020-08-30', 1, 'DMA1', 'AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQwwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'),
+('2020-09-03 15:14:31', '2020-08-30', 3, '7654', 'AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQwwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+
 DROP TABLE IF EXISTS `rxrec`;
 -- Create syntax for TABLE 'rxrec'
 CREATE TABLE `rxrec` ( 
@@ -17354,6 +17362,7 @@ PRIMARY KEY (`txcaseid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO txcase (`automodifiedtimestamp`,`txcaseid`,`patid`,`priority`,`status`,`descript`,`createdate`,`financedescriptid`,`financeexpdate`,`_unused`,`txcaseindex`,`_unused2`,`isdefault`,`_unused3`) VALUES
+('2020-09-03 15:13:33', 2, 2, 0, 1, 'Treatment Plan                                                                  ', '2020-09-03', 1, '2020-09-03', 0, 0, 0, 1, '                                                         '),
 ('2020-09-02 18:54:25', 1, 1, 0, 1, 'Treatment Plan                                                                  ', '2020-09-02', 0, '2020-09-02', 0, 9, 0, 1, '                                                         ');
 
 DROP TABLE IF EXISTS `txcasecase`;
@@ -17385,6 +17394,7 @@ PRIMARY KEY (`casestatusid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO txcasestatus (`automodifiedtimestamp`,`casestatusid`,`caseid`,`modifieddate`,`status`,`comment`,`_unused0`) VALUES
+('2020-09-03 15:13:33', 2, 2, '2020-09-03', 1, 'Case created as a result of newly added procedure                                                                                                      ', '                    '),
 ('2020-09-02 18:54:25', 1, 1, '2020-09-02', 1, 'Case created by user:                                                                                                                                  ', '                    ');
 
 DROP TABLE IF EXISTS `v_account_notes`;
@@ -17489,6 +17499,9 @@ CREATE TABLE `v_appointment` (
 `note` text NULL DEFAULT NULL,
 PRIMARY KEY (`appointment_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO v_appointment (`modified_time_stamp`,`appointment_id`,`appointment_date`,`operatory_id`,`provider_id`,`provider_last_name`,`provider_first_name`,`provider_mi`,`patient_id`,`patient_guid`,`patient_name`,`patient_phone`,`length`,`reason`,`start_hour`,`start_minute`,`status_id`,`status_description`,`amount`,`appt_broken_class`,`broken_date`,`appt_flag`,`auto_update_cc`,`ref_by_type`,`ref_id`,`lab_case_appt`,`create_date`,`created_by_user`,`pinboard`,`note`) VALUES
+('2020-09-03 15:14:31', 1, '2020-09-03', '7654', 'DMA1', 'Abella               ', 'Demby           ', 'M ', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez, Lance S                         ', '2341232134       ', 10, 'Samp Add                                                     ', 16, 10, 0, '', 500, 0, null, 0, 1, 0, 0, 0, '2020-09-03', '    ', 0, '');
 
 DROP TABLE IF EXISTS `v_appointment_checklist`;
 -- Create syntax for TABLE 'v_appointment_checklist'
@@ -17609,6 +17622,9 @@ CREATE TABLE `v_appt` (
 `time_pattern` char(72) NULL DEFAULT NULL,
 PRIMARY KEY (`appointment_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO v_appt (`modified_time_stamp`,`appointment_id`,`appointment_date`,`operatory_id`,`provider_id`,`broken`,`patient_name`,`patient_id`,`patient_guid`,`length`,`amount`,`broken_date`,`appt_flag`,`patient_phone`,`reason`,`start_hour`,`start_minute`,`status_id`,`production_type`,`newpatient_addressid`,`auto_update_cc`,`amountset`,`ref_by_type`,`lab_case_appt`,`addtnl_provider_id`,`ref_id`,`followup`,`codeid1`,`codeid2`,`codeid3`,`codeid4`,`codeid5`,`codeid6`,`codeid7`,`codeid8`,`codeid9`,`codeid10`,`codeid11`,`codeid12`,`codeid13`,`codeid14`,`codeid15`,`codeid16`,`codeid17`,`codeid18`,`codeid19`,`codeid20`,`staff_id`,`modified_date`,`codetype1`,`codetype2`,`codetype3`,`codetype4`,`codetype5`,`codetype6`,`codetype7`,`codetype8`,`codetype9`,`codetype10`,`codetype11`,`codetype12`,`codetype13`,`codetype14`,`codetype15`,`codetype16`,`codetype17`,`codetype18`,`codetype19`,`codetype20`,`create_date`,`created_by_user`,`onpinboard`,`origin_date`,`origin_start_hour`,`origin_start_minute`,`time_pattern`) VALUES
+('2020-09-03 15:14:31', 1, '2020-09-03', '7654', 'DMA1', 0, 'Sanchez, Lance S                         ', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 10, 500, null, 0, '2341232134       ', 'Samp Add                                                     ', 16, 10, 0, 1, 0, 1, 0, 0, 0, '    ', 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '    ', '2020-09-03', 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2020-09-03', '    ', 0, null, 0, 0, '222222222222222222222222222222222222222222222222222222222222222222222222');
 
 DROP TABLE IF EXISTS `v_appt_book_events`;
 -- Create syntax for TABLE 'v_appt_book_events'
@@ -18734,7 +18750,7 @@ PRIMARY KEY (`modified_time_stamp`,`patient_id`,`patient_guid`,`last_name`,`firs
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_patient_appointment (`modified_time_stamp`,`patient_id`,`patient_guid`,`last_name`,`first_name`,`next_appointment_date`,`previous_appointment_date`,`number_of_missed_appointments`,`last_missed_appointment_date`) VALUES
-('2020-09-02 23:37:38', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', null, null, 0, null),
+('2020-09-02 23:37:38', 2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', '2020-09-03', null, 0, null),
 ('2018-04-24 00:58:27', 1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Rusanov              ', 'Andrey          ', null, '2018-04-24', 0, null);
 
 DROP TABLE IF EXISTS `v_patient_insurance`;
@@ -19758,6 +19774,7 @@ PRIMARY KEY (`procid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_proclog (`automodifiedtimestamp`,`patid`,`procid`,`guarid`,`chartstatus`,`procdate`,`proccodeid`,`preauthid`,`claimid`,`proclogclass`,`proclogorder`,`provid`,`history`,`amt`,`amtpriminspaid`,`amtsecinspaid`,`entrydate`,`toothrangestart`,`toothrangeend`,`surfacestring`,`surfm`,`surfo`,`surfd`,`surff`,`surfl`,`surf5`,`invalidasofflagstpdate`,`medproctype`,`donotbillinsflag`,`diag`,`refid`,`reftype`,`txcaseid`,`txcaseindex`,`startcompdatereq`,`completiondate`,`startdate`,`checknum`) VALUES
+('2020-09-03 15:13:42', 2, 3, 2, 105, '2020-09-03', 747, 0, 0, 0, 0, 'DMA1', 0, 500, 0, 0, '2020-09-03', 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 2, 0, 0, null, null, '                     '),
 ('2018-04-24 00:38:59', 1, 2, 1, 90, '2018-04-24', 0, 0, 0, 1, 1, 'DMA1', 0, -10, 0, 0, '2018-04-24', 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, 0, null, null, '                     '),
 ('2018-04-24 00:32:06', 1, 1, 1, 102, '2018-04-24', 62, 0, 0, 0, 0, 'DMA1', 0, 100, 0, 0, '2018-04-24', 21, 21, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, 0, null, null, '                     ');
 
