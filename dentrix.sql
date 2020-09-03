@@ -70,8 +70,8 @@ PRIMARY KEY (`guarid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO aging (`automodifiedtimestamp`,`guarid`,`aging0to30`,`aging31to60`,`aging61to90`,`aging91plus`,`_agingunused`,`agingdate`,`lastpaydate`,`lastpayamt`,`lastinspaydate`,`lastinspayamt`,`lastbillingdate`,`provid1`,`provamt1`,`provid2`,`provamt2`,`provid3`,`provamt3`,`provid4`,`provamt4`,`provid5`,`provamt5`,`provid6`,`provamt6`,`provid7`,`provamt7`,`provid8`,`provamt8`,`provid9`,`provamt9`,`provid10`,`provamt10`,`_unused1`,`_unused2`,`_unused3`,`_unused4`,`_unused5`,`_unused6`,`billingtype`,`_unused7`) VALUES
-('2020-09-03 15:40:05', 2, 500, 0, 0, 0, 0, '2017-12-31', null, 0, null, 0, null, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, 0, 0, 0, 0, 0, '    ', 1, 0),
-('2018-04-24 00:58:49', 1, 90, 0, 0, 0, 0, '2017-12-31', '2018-04-24', 10, null, 0, null, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, 0, 0, 0, 0, 0, '    ', 1, 0);
+('2020-09-03 17:11:33', 2, 500, 0, 0, 0, 0, '2017-12-31', null, 0, null, 0, null, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, 0, 0, 0, 0, 0, '    ', 1, 0),
+('2020-09-03 17:22:52', 1, 70, 0, 0, 0, 0, '2017-12-31', '2020-09-03', 20, null, 0, null, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, '    ', 0, 0, 0, 0, 0, 0, '    ', 1, 0);
 
 DROP TABLE IF EXISTS `appt`;
 -- Create syntax for TABLE 'appt'
@@ -544,9 +544,6 @@ CREATE TABLE `comm` (
 `status15` smallint NULL DEFAULT NULL,
 PRIMARY KEY (`stationid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-INSERT INTO comm (`automodifiedtimestamp`,`stationid`,`_unused1`,`changedate`,`displaymode`,`displayop`,`displayprov`,`commcount`,`commtype`,`apptid1`,`apptid2`,`apptid3`,`apptid4`,`apptid5`,`apptid6`,`apptid7`,`apptid8`,`apptid9`,`apptid10`,`apptid11`,`apptid12`,`apptid13`,`apptid14`,`apptid15`,`status1`,`status2`,`status3`,`status4`,`status5`,`status6`,`status7`,`status8`,`status9`,`status10`,`status11`,`status12`,`status13`,`status14`,`status15`) VALUES
-('2020-09-03 15:40:06', -128, 0, '2020-08-30', 0, '    ', '    ', 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 DROP TABLE IF EXISTS `consent`;
 -- Create syntax for TABLE 'consent'
@@ -8283,7 +8280,8 @@ PRIMARY KEY (`procid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO fullproclog (`automodifiedtimestamp`,`patid`,`procid`,`guarid`,`chartstatus`,`authstatus`,`procdate`,`proccodeid`,`preauthid`,`claimid`,`proclogclass`,`proclogorder`,`provid`,`history`,`authstatus2`,`amt`,`amtpriminspaid`,`amtsecinspaid`,`amtpreauth`,`createdate`,`amtsecpreauthdollar`,`paintflag`,`amtsecpreauthcents`,`materialcost`,`labexpense`,`cdareason`,`cdalabcode`,`toothrangestart`,`toothrangeend`,`surfacestring`,`surfm`,`surfo`,`surfd`,`surfl`,`surff`,`surf5`,`amtsecpreauth`,`invalidasofflagstpdate`,`medproctype`,`srflag`,`donotbillinsflag`,`diag`,`refid`,`reftype`,`labfee2`,`cdalabcode2`,`srflagex`,`txcaseid`,`txcaseindex`,`checknum`,`appliedtopa`,`startcompdatereq`,`completiondate`,`startdate`,`primestoverride4orphaned`,`secestoverride4orphaned`,`_unused`) VALUES
-('2020-09-03 15:40:05', 2, 3, 2, 102, 0, '2020-09-03', 747, 0, 0, 0, 0, 'DMA1', 0, 0, 500, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 0, 0, ' ', 0, 2, 0, '                     ', 0, 0, null, null, 0, 0, '  '),
+('2020-09-03 17:22:51', 1, 4, 1, 90, 0, '2020-09-03', 0, 0, 0, 1, 2, 'DMA1', 0, 0, -20, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, ' ', 0, 0, 0, '                     ', 0, 0, null, null, 0, 0, '  '),
+('2020-09-03 16:53:05', 2, 3, 2, 102, 0, '2020-09-03', 747, 0, 0, 0, 0, 'DMA1', 0, 0, 500, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 0, 0, ' ', 0, 2, 0, '                     ', 0, 0, null, null, 0, 0, '  '),
 ('2018-04-24 00:38:59', 1, 2, 1, 90, 0, '2018-04-24', 0, 0, 0, 1, 1, 'DMA1', 0, 0, -10, 0, 0, 0, '2018-04-24', 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, ' ', 0, 0, 0, '                     ', 0, 0, null, null, 0, 0, '  '),
 ('2018-04-24 00:32:06', 1, 1, 1, 102, 0, '2018-04-24', 62, 0, 0, 0, 0, 'DMA1', 0, 0, 100, 0, 0, 0, '2018-04-24', 0, 0, 0, 0, 0, 0, 0, 21, 21, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, ' ', 0, 0, 0, '                     ', 0, 0, null, null, 0, 0, '  ');
 
@@ -17341,7 +17339,7 @@ PRIMARY KEY (`provid`,`totalstype`,`yr`,`mon`)
 INSERT INTO totals (`automodifiedtimestamp`,`totalstype`,`mon`,`yr`,`provid`,`begmon`,`begyr`,`totalcharges`,`chargesins`,`chargesadj`,`financecharges`,`payments`,`paymentsins`,`paymentsadj`,`chargesspecialadjmtd`,`paymentsspecialadjmtd`,`latechargesmtd`,`latechargesytd`,`currentpaymentagreementbalance`,`_unused1`,`rec0`,`rec30`,`rec60`,`rec90`,`_rec120`,`payplan`,`currentcreditbalance`,`begbalance`,`_treatplan`,`_schedtreatplan`,`newpatcount`,`deletedpatcount`,`referredpatcount`,`activepatcount`,`totalpatcount`,`insuredpatcount`,`malepatcount`,`femalepatcount`,`under12patcount`,`over65patcount`,`familycount`,`missedpaymentcount`,`_recalls`,`_recallscomp`,`_recallspastcomp`,`_unused2`,`_unused3`,`_unused4`,`latecharges`,`_unused5`,`yrbegbalance`,`chargesytd`,`chargesinsytd`,`chargesadjytd`,`financechargeytd`,`paymentsytd`,`paymentsinsytd`,`paymentsadjytd`,`newpatcountytd`,`deletedpatcountytd`,`referredpatcountytd`,`missedpaymentcountytd`,`_yrrecallcount`,`_yrrecallcountcomp`,`_yrrecallcountpastcomp`,`chargesspecialadjytd`,`paymentsspecialadjytd`,`_unused6`,`_unused7`,`_unused8`,`_unused9`) VALUES
 ('2020-09-02 22:15:17', 0, 0, 0, '7384', 12, 2017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 ('2020-09-02 22:15:17', 1, 12, 2017, '7384', 1, 2017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('2020-09-03 15:40:05', 0, 0, 0, 'DMA1', 1, 2018, 600, 0, 0, 0, -10, 0, 0, 0, 0, 0, 0, 0, 0, 590, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 600, 0, 0, 0, -10, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('2020-09-03 17:22:52', 0, 0, 0, 'DMA1', 1, 2018, 600, 0, 0, 0, -30, 0, 0, 0, 0, 0, 0, 0, 0, 570, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 600, 0, 0, 0, -30, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 ('2018-01-16 02:23:14', 1, 12, 2017, 'DMA1', 1, 2017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 DROP TABLE IF EXISTS `txcase`;
@@ -18501,7 +18499,7 @@ PRIMARY KEY (`guar_id`)
 
 INSERT INTO v_guarantor_balance (`guar_id`,`guar_guid`,`last_name`,`first_name`,`mi`,`balance_0_30_days`,`balance_31_60_days`,`balance_61_90_days`,`balance_91_plus_days`,`last_payment_received_date`,`last_payment_amount`,`email`,`mobile_phone`,`birth_date`,`status`,`social_sec_num`,`billing_type_description`) VALUES
 (2, '6617f132-6bba-47d8-9d36-33a7f6162ce6', 'Sanchez              ', 'Lance           ', 'S ', 500, 0, 0, 0, null, 0, 'email@gmail.com                                             ', '5622378493       ', '1997-08-15', 1, '123456789 ', 'Standard Billing - finance charges                  '),
-(1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Rusanov              ', 'Andrey          ', 'R ', 90, 0, 0, 0, '2018-04-24', 10, '                                                            ', '                 ', '1992-10-11', 1, '          ', 'Standard Billing - finance charges                  ');
+(1, '1191871d-d511-4901-b9e6-f9727f58597a', 'Rusanov              ', 'Andrey          ', 'R ', 70, 0, 0, 0, '2020-09-03', 20, '                                                            ', '                 ', '1992-10-11', 1, '          ', 'Standard Billing - finance charges                  ');
 
 DROP TABLE IF EXISTS `v_initial_reasons`;
 -- Create syntax for TABLE 'v_initial_reasons'
@@ -19777,7 +19775,8 @@ PRIMARY KEY (`procid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO v_proclog (`automodifiedtimestamp`,`patid`,`procid`,`guarid`,`chartstatus`,`procdate`,`proccodeid`,`preauthid`,`claimid`,`proclogclass`,`proclogorder`,`provid`,`history`,`amt`,`amtpriminspaid`,`amtsecinspaid`,`entrydate`,`toothrangestart`,`toothrangeend`,`surfacestring`,`surfm`,`surfo`,`surfd`,`surff`,`surfl`,`surf5`,`invalidasofflagstpdate`,`medproctype`,`donotbillinsflag`,`diag`,`refid`,`reftype`,`txcaseid`,`txcaseindex`,`startcompdatereq`,`completiondate`,`startdate`,`checknum`) VALUES
-('2020-09-03 15:40:05', 2, 3, 2, 102, '2020-09-03', 747, 0, 0, 0, 0, 'DMA1', 0, 500, 0, 0, '2020-09-03', 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 2, 0, 0, null, null, '                     '),
+('2020-09-03 17:22:51', 1, 4, 1, 90, '2020-09-03', 0, 0, 0, 1, 2, 'DMA1', 0, -20, 0, 0, '2020-09-03', 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, 0, null, null, '                     '),
+('2020-09-03 16:53:05', 2, 3, 2, 102, '2020-09-03', 747, 0, 0, 0, 0, 'DMA1', 0, 500, 0, 0, '2020-09-03', 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, '2020-09-03', 0, 0, 0, 0, 0, 2, 0, 0, null, null, '                     '),
 ('2018-04-24 00:38:59', 1, 2, 1, 90, '2018-04-24', 0, 0, 0, 1, 1, 'DMA1', 0, -10, 0, 0, '2018-04-24', 0, 0, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, 0, null, null, '                     '),
 ('2018-04-24 00:32:06', 1, 1, 1, 102, '2018-04-24', 62, 0, 0, 0, 0, 'DMA1', 0, 100, 0, 0, '2018-04-24', 21, 21, 'AAAAAAAAAAAAAAAAAAAAAAAAAAA=', 0, 0, 0, 0, 0, 0, null, 0, 0, 0, 0, 0, 0, 0, 0, null, null, '                     ');
 
